@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center; 
+            font-size: 18pt;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #contenedor {
+            border: 3px solid orange;
+        }
+        #cabecera {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #menu {
+            background-color: burlywood;
+            float: left;
+            width: 15%;
+        }
+        #contenido {
+            float: left;
+            width: 85%;
+        }
+        #contenido #principal{
+            background-color: coral;
+            float: left;
+            width: 70%;
+        }
+        #contenido #secundario{
+            background-color: magenta;
+            float: left;
+            width: 30%;
+        }
+        #pie {
+            background-color: gold;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>     
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1>"ENCABEZADO"</h1>
+            <h2>Diseño web mediante estructura HTML</h2>
+        </div>   
+        <div id="menu">
+            <h1>"MENU"</h1>
+            <h3>Tipos</h3>
+            <ul>
+                <li>Diseño a 2 Columnas</li>
+                <li>Diseño a 3 Columnas</li>
+            </ul>
+        </div>
+        <div id="contenido">
+            <div id="principal">
+                <h1>"PRINCIPAL"</h1>
+                <h4>Diseño a 3 Columnas</h4>
+                <p>
+                Además del diseño a dos columnas, el diseño más utilizado es el de tres columnas con cabecera y pie de página. En este caso, los contenidos se dividen en dos zonas diferenciadas: zona principal de contenidos y zona lateral de contenidos auxiliares
+                </p>
+                <p>
+                El código anterior crea una página con anchura variable que se adapta a la ventana del navegador. Para definir una página con anchura fija, solamente es necesario sustituir las anchuras en porcentajes por anchuras en píxel.
+                </p>
+            </div>
+            <div id="secundario">
+                <h1>"SECUNDARIO"</h1>
+                <p>
+                Al igual que sucedía en el diseño a dos columnas, se puede optar por posicionar todos los elementos mediante float: left o se puede utilizar float: left para el menú y la zona principal de contenidos y float: right para el contenedor de los contenidos y la zona secundaria de contenidos.
+                </p>
+            </div>
+        </div>
+        <div id="pie">
+            <h1>"PIE DE PAGINA"</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center; 
+            font-size: 18pt;
+        }
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        #contenedor {
+            border: 3px solid orange;
+        }
+        #cabecera {
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #menu {
+            background-color: burlywood;
+            float: left;
+            width: 15%;
+        }
+        #contenido {
+            background-color: magenta;
+            float: left;
+            width: 85%;
+        }
+        #pie {
+            background-color: gold;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>     
+    <div id="contenedor">
+        <div id="cabecera">
+            <h1>"ENCABEZADO"</h1>
+            <h2>Diseño web mediante estructura HTML</h2>
+        </div>   
+        <div id="menu">
+            <h1>"MENU"</h1>
+            <h3>Tipos</h3>
+            <ul>
+                <li>Diseño a 2 Columnas</li>
+                <li>Diseño a 3 Columnas</li>
+            </ul>
+        </div>
+        <div id="contenido">
+            <h1>"PRINCIPAL"</h1>
+            <h4>Diseño a 2 Columnas</h4>
+            <p>
+            El objetivo de este diseño es definir una estructura de página con cabecera y pie, un menú lateral de navegación y una zona de contenidos. La anchura de la página se fija en 700px, la anchura del menú es de 150px y la anchura de los contenidos es de 550px
+            </p>
+            <p>
+            La solución CSS se basa en el uso de la propiedad float para los elementos posicionados como el menú y los contenidos y el uso de la propiedad clear en el pie de página para evitar los solapamientos ocasionados por los elementos posicionados con float.
+            </p>
+            <p>
+            Si se indican la anchuras de los bloques que forman la página en porcentajes, el diseño final es dinámico. Para crear diseños de anchura fija, basta con establecer las anchuras de los bloques en píxel.
+            </p>
+        </div>
+        <div id="pie">
+            <h1>"PIE DE PAGINA"</h1>
+        </div>
+    </div>
+</body>
+</html>
