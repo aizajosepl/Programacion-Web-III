@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de empleados</title>
+    <!-- Include Bootstrap CSS here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Lista de empleados</h1>
+    
+    <!-- Add a button to navigate to the create employee page -->
+    <a href="/employee/create" class="btn btn-primary mb-3">Crea Empleado</a>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% employees.forEach(employee => { %>
+          <tr>
+            <td><%= employee.firstName %></td>
+            <td><%= employee.lastName %></td>
+            <td><%= employee.email %></td>
+            <td>
+              <!-- Buttons for updating and deleting employees -->
+              <a href="/employee/update/<%= employee.id %>" class="btn btn-info btn-sm">Editar</a>
+              <form action="/employee/delete/<%= employee.id %>" method="post" style="display: inline;">
+                <button type="submit" class="btn btn-danger btn-sm">Borrar</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Include Bootstrap JS and jQuery here -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
